@@ -1,0 +1,15 @@
+﻿@page
+@model RockMuseumUI.Pages.AdminTerminalModel
+@{ ViewData["Title"] = "Admin Terminal"; }
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input value="Video1" type="image" src="~/Pictures/rick.jpg" width="220" height="150" asp-page-handler="Video1" asp-route-sessioncount="1">
+
+    <input value="Video2" type="image" src="~/Pictures/rickOnCrack.jpg" width="220" height="150" asp-page-handler="Video2" asp-route-sessioncount="2">
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-page="/Exhibitions/Index">Exhibition Collection</a>
+    </li>
+</form>
+@* MARC *@
